@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    
+    <!--
+        Giovanni Munoz
+        Main profile page for personal portfolio
+    -->
+    
+    <link rel="stylesheet" href="MainProfile_PP.css">
+    <script src="zyBooks_Activities.js" defer></script>
+
+    <title>Main Profile</title>
+</head>
+
+
+
+<body>
+    <h1>Personal Portfolio</h1>
+    <a class="back" href="index.html">🔙</a>
+    <!--
+        Source for tabs: https://www.w3schools.com/howto/howto_js_tabs.asp
+
+    -->
+
+
+    <!-- Create tabes to seperate About Me , Labs , Projects -->
+    <div class="tab">
+        <button class="tablink" onclick="openTabs(event, 'aboutme')" id="defaultOpen">About Me</button>
+        <button class="tablink" onclick="openTabs(event, 'lab')">Labs</button>
+        <button class="tablink" onclick="openTabs(event, 'project')">Projects</button>
+    </div>
+
+    <!-- Content inside of tabs -->
+
+    <!--About me tab-->
+    <div id="aboutme" class="tabcontent">
+        <p>I'm <b>Giovanni</b>, nice to meet you.</p>
+        <p class="hand">👋🏽</p>
+        <p class="intro">Welcome to my personal portfolio. I started learning how to make webpages using HTML, CSS and JavaScript at the beginning of 2021. This website is a representation of my journey to becoming a professional web developer. Right now my web development experience is composed of assigned labs from my curriculum and simulated projects for a wide array of companies. It's only the beginning and there's more to come. <br> Enjoy.</p>
+    </div>
+
+    <!--Labs tab-->
+    <div id="lab" class="tabcontent">
+
+        <!-- zyBooks 7.5.5: Intervals Participation Activity -->
+        <h3>Countdown Timer</h3>
+        <p>Enter countdown number, then press start.<br>Reset button will set timer to 60 seconds.</p>
+        <input type="number" id="number" min="0" value="60"> <br>
+        <input type="button" id="startbutton" value="start">
+        <input type="button" id="stopbutton" value="stop" disabled>
+        <!-- Added reset button -->
+        <input type="button" id="resetbutton" value="reset">
+
+        <br><br><br>
+
+        <!-- Lights Out Game Example taken from zyBooks 7.12-->
+        <h3>Lights Out Game</h3>
+        <div id="information"></div>
+        <table id="gameTable"></table>
+        <input id="newGame3x3Button" type="button" value="New game (3x3)">
+        <input id="newGame5x5Button" type="button" value="New game (5x5)">
+
+        <br><br><br>
+
+        <!--Password Strength Assignment from zyBooks-->
+        <h3>Password Strength Test</h3>
+        <label for="password">Password:</label>
+        <input type="text" id="password">
+        <span id="strength"></span>
+        <br><br>
+        A <b>STRONG</b> password will have:
+        <ul>
+            <li>atleast six characters</li>
+            <li>atleast one number</li>
+            <li>atleast one capital letter</li>
+        </ul>
+
+        <br><br><br>
+        
+    </div>
+
+    <!--Projects tab-->
+    <div id="project" class="tabcontent">
+        
+        <!-- Add link to projects from class  -->
+        <a href="t9-code-3-GiovanniDM/code9-3_txt.html" target="_blank">Analog Clock</a>
+        <a href="t14-case-4-GiovanniDM/kg_stamps.html" target="_blank">Kindder Garden Stamps</a>
+        <a href="t12-case-4-GiovanniDM/gi_qbs.html" target="_blank">Gridirony</a>
+        
+    </div>
+    
+    
+</body>
+</html>

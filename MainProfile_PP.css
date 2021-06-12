@@ -1,0 +1,135 @@
+/*
+    Giovanni Munoz
+    CSS for Main Profile page
+
+    Note:
+    - class is "."
+    - id is "#"
+*/
+
+html {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #03588C 90%, #F2CAA7 180px);
+    background-repeat: no-repeat;
+    background-color: #03588C;
+}
+
+#aboutme {
+    text-align: center;
+    font-size: large;
+    
+}
+
+.hand {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    font-size: xx-large;
+}
+
+.intro {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Tab styling */
+.tab {
+    overflow: hidden;
+    border: 5px solid #73A2BF;
+    background-color: #F2CAA7;
+    margin-top: -30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Tab button styling */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Change color of tab buttons on hover */
+.tab button:hover {
+    background-color: #cabcaf;
+}
+
+/* Current tab styling */
+.tab button.active {
+    background-color: #73A2BF;
+    color: #F2CAA7;
+    font-weight: bold;
+
+}
+
+
+/* Styling for content inside of tab */
+.tabcontent {
+    background-color: whitesmoke;
+    display: none;
+    padding: 20px 20px;
+    border: 5px solid #73A2BF;
+    border-top: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+h1 {
+    color: black;
+    font-size: xx-large;
+    text-align: center;
+    font-family: Georgia;
+    letter-spacing: 1px;
+}
+
+/* Back button */
+.back {
+    font-size: xx-large;
+    position: relative;
+    top: -70px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Lights Out Game style *CSS taken from 7.12 Example: Lights Out Game in zyBooks */
+td { border: 1px solid black; padding: 20px; }
+.lightOn { background-color: #73A2BF; color: black }
+.lightOff { background-color: black; color: white }
+
+/* Clear gap between ul and li */
+ul {
+    margin: 5px 0;
+}
+
+
+/* Create boxes with links to projects */
+#project a {
+    background-color: #03588C;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    display: inline-block;
+    border: 3px solid whitesmoke;
+}
+
+#project a:hover {
+    background-color: #73A2BF;
+}
+
+#project {
+    text-align: center;
+    padding: 25px;
+}
